@@ -81,3 +81,7 @@ An affine transformation can be defined by a matrix:
 [[a, b, 0],
  [c, d, 0],
  [0, 0, 1]]
+
+
+https://en.wikipedia.org/wiki/Transformation_matrix
+https://en.wikipedia.org/wiki/Householder_transformation
