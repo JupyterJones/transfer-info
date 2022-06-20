@@ -1,0 +1,11 @@
+https://napari.org/howtos/layers/image.html
+
+pip install "git+https://github.com/napari/napari.git#egg=napari[all]"
+
+From inside an IPython shell or jupyter notebook you can open up an interactive viewer by calling:
+
+from skimage import data
+import napari
+
+viewer = napari.view_image(data.astronaut(), rgb=True)
+
