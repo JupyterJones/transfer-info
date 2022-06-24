@@ -1,0 +1,12 @@
+Resize Ubuntu swapfile
+
+sudo swapon --show
+df -h
+sudo swapoff -a
+sudo dd if=/dev/zero of=/swapfile bs=1G count=10 status=progress
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+free -h
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
